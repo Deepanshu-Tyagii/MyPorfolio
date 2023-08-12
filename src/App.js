@@ -16,7 +16,7 @@ function App() {
       <motion.div key={Route} className='h-full'>
         <Transition />
       <Routes>
-        <Route path='/' element={<Main />} />
+        <Route path='/MyPortfolio' element={<Main />} />
         <Route path='/about' element={<About />} />
         <Route path='/testimonials' element={<Testimonials />} />
         <Route path='/projects' element={<Projects />} />
