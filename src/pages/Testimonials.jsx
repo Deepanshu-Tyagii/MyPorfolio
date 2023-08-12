@@ -2,7 +2,7 @@ import React from 'react'
 import TopLeftImg from '../components/TopLeftImg'
 import Navbar from '../components/Navbar'
 import SideBar from '../components/SideBar'
-import { Pagination,     Navigation } from 'swiper/modules';
+import { Pagination } from 'swiper/modules';
 
 
 import { FaQuoteLeft } from 'react-icons/fa';
@@ -48,11 +48,10 @@ const Testimonials = () => {
             <h2 className='xl:text-[35px] text-2xl font-bold text-center xl:mb-8 '>What clients <span className='text-accent'> Say.</span></h2>
             <div>
             <Swiper 
-            navigation={true}
             pagination={{
             clickable: true,
         }}
-        modules={{Navigation, Pagination}}
+        modules={{ Pagination}}
         className='h-[380px] xl:w-[1180px] '
         >
             {testimonialSlider.map((person, index) =>{
