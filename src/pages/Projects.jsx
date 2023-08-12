@@ -8,7 +8,6 @@ import {BsArrowRight } from 'react-icons/bs'
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import 'swiper/css';
-import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 export const projectData = {
@@ -17,19 +16,19 @@ export const projectData = {
       images: [
         {
           title: 'title',
-          path: 'images/thumb1.jpg',
+          path: '/images/thumb1.jpg',
         },
         {
           title: 'title',
-          path: 'images/thumb2.jpg',
+          path: '/images/thumb2.jpg',
         },
         {
           title: 'title',
-          path: 'images/thumb3.jpg',
+          path: '/images/thumb3.jpg',
         },
         {
           title: 'title',
-          path: 'images/thumb4.jpg',
+          path: '/images/thumb4.jpg',
         },
       ],
     },
@@ -37,19 +36,19 @@ export const projectData = {
       images: [
         {
           title: 'title',
-          path: 'images/thumb4.jpg',
+          path: '/images/thumb4.jpg',
         },
         {
           title: 'title',
-          path: 'images/thumb1.jpg',
+          path: '/images/thumb1.jpg',
         },
         {
           title: 'title',
-          path: 'images/thumb2.jpg',
+          path: '/images/thumb2.jpg',
         },
         {
           title: 'title',
-          path: 'images/thumb3.jpg',
+          path: '/images/thumb3.jpg',
         },
       ],
     },
@@ -85,7 +84,7 @@ const Projects = () => {
                           return (
                             <div className='relative rounded-lg overflow-hidden flex items-center justify-center group' key={index}>
                               <div className='flex items-center justify-center relative overflow-hidden'>
-                              <img src={image.path} alt="i" />
+                              <img src={image.path} alt={image.title} />
 
                               <div className='absolute inset-0 bg-gradient-to-l from-transparent via-[#e838cc] to-[#4a22bd] opacity-0 group-hover:opacity-80 transition-all duration-700'></div>
                               <div className='absolute bottom-0 translate-y-full  group-hover:-translate-y-10 group-hover:xl:-translate-y-20
