@@ -5,7 +5,8 @@ import { Link } from 'react-router-dom';
 
 
 const Navbar = () => {
-  const [darkMode, setDarkMode] = useState(false);
+
+  const[theme, setTheme] = useState(localStorage.getItem("theme") ? localStorage.getItem("theme") : "light");
 
   // Social Links
   const linkedInUrl = 'https://www.linkedin.com/in/deepanshu-tyagi-105004157';
@@ -13,27 +14,29 @@ const Navbar = () => {
 
 
   const handleOn = () => {
-    setDarkMode(true);
-    localStorage.setItem('darkMode', darkMode.toString());
+    setTheme("dark");
+    localStorage.setItem('theme', theme);
   }
 
   const handleOff = () => {
-    setDarkMode(false);
-    localStorage.setItem('darkMode', darkMode.toString());
+    setTheme("light");
+    localStorage.setItem('theme', theme);
   }
 
   useEffect(() => {
-    localStorage.setItem('darkMode', darkMode.toString());
-  }, [darkMode]);
+    localStorage.setItem("theme", theme.toString());
+    const localTheme = localStorage.getItem("theme");
+    document.querySelector('html').setAttribute("data-theme", localTheme);
+  }, [theme]);
 
-  useEffect(() => {
-    const saveMode = localStorage.getItem('darkMode');
-    if (saveMode === "true") {
-      setDarkMode(true)
-    } else {
-      setDarkMode(false)
-    }
-  }, []);
+  // useEffect(() => {
+  //   const saveMode = localStorage.getItem("theme");
+  //   if (saveMode === "dark") {
+  //     setTheme("light")
+  //   } else {
+  //     setTheme("dark")
+  //   }
+  // }, []);
 
   return (
     <header className='absolute z-30 w-full flex items-center  xl:px-0 xl:h-[90px]'>
@@ -48,7 +51,7 @@ const Navbar = () => {
             <Link to={instaUrl}><FaInstagram className='cursor-pointer xl:hover:text-orange-300 text-xl xl:text-xl xl:hover:scale-150 transition duration-500 ease-in-out' /></Link>
             <FaBell className='cursor-pointer hover:text-fuchsia-300 text-xl xl:text-xl xl:hover:scale-150 transition duration-500 ease-in-out' />
             {
-              !darkMode
+              theme === "light"
                 ?
                 <FaMoon onClick={handleOn} className='cursor-pointer xl:hover:text-sky-300 text-xl xl:text-xl xl:hover:scale-150 transition duration-500 ease-in-out' />
                 :
