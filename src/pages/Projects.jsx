@@ -6,6 +6,9 @@ import { Pagination } from 'swiper/modules';
 import {BsArrowRight } from 'react-icons/bs'
 
 import { Swiper, SwiperSlide } from 'swiper/react';
+import {motion} from 'framer-motion'
+import { fadeIn } from '../assets/js/variants';
+
 
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -64,16 +67,31 @@ const Projects = () => {
       <div className='container mx-auto'>
         <div className='mt-44 xl:mt-52 xl:mx-44 flex flex-col xl:flex-row gap-x-8'>
           <div className='text-center flex flex-col xl:w-[30vw] lg:text-left mb-4 xl:mb-0'>
-            <h2 className='xl:text-[35px] text-2xl font-bold text-center xl:text-left xl:my-8 '>My <span className='text-accent'> Work.</span></h2>
-            <p className='mt-2 mb-4 max-w-[400px] mx-auto lg:mx-0'>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+            <motion.h2 
+            variants={fadeIn('up', 0.2)}
+            initial='hidden'
+            animate='show'
+            exit='hidden'
+            className='xl:text-[35px] text-2xl font-bold text-center xl:text-left xl:my-8 '>My <span className='text-accent'> Work.</span></motion.h2>
+            <motion.p 
+            variants={fadeIn('up', 0.4)}
+            initial='hidden'
+            animate='show'
+            exit='hidden'
+            className='mt-2 mb-4 max-w-[400px] mx-auto lg:mx-0'>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</motion.p>
             </div>
-            <div className='w-full xl:max-w-[65%]'>
+            <motion.div 
+            variants={fadeIn('down', 0.2)}
+            initial='hidden'
+            animate='show'
+            exit='hidden'
+            className='w-full xl:max-w-[65%]'>
               <Swiper
                 // spaceBetween={10}
                 pagination={{
                   clickable: true,
                 }}
-                modules={{ Pagination }}
+                modules={[ Pagination ]}
                 className='h-[380px] sm:h-[480px]'
               >
                 {projectData.slides.map((slide, index) => {
@@ -105,7 +123,7 @@ const Projects = () => {
                   )
                 })}
               </Swiper>
-            </div>
+            </motion.div>
           </div>
           </div>
         </div>

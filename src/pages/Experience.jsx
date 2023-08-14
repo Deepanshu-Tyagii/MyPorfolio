@@ -8,6 +8,8 @@ import {
 import { SiAdobexd, SiAdobephotoshop } from 'react-icons/si'
 
 import CountUp from 'react-countup'
+import {motion} from 'framer-motion'
+import { fadeIn } from '../assets/js/variants'
 
 
 export const aboutData = [
@@ -73,7 +75,7 @@ export const aboutData = [
         stage: '2018',
       },
       {
-        title: 'Bachelor of Computer Application - Institute of Management and Studies, U.P, India',
+        title: 'Bachelor of Computer Application - I.M.S, U.P, India',
         stage: '2014',
       },
       
@@ -98,9 +100,24 @@ const About = () => {
         <div className='h-full flex flex-col items-center xl:flex-row gap-x-6 mt-48 xl:mt-40'>
           {/* text */}
           <div className='flex flex-1 flex-col justify-center mt-0 xl:pl-40 '>
-            <h2 className='xl:text-[35px] text-2xl xl:text-left text-center font-bold mb-4 '>Captivating <span className='text-accent'>stories</span> birth magnification designs.</h2>
-            <p className='xl:text-left text-center max-w-[500px] mx-auto xl:mx-0 xl:mb-12 px-2 xl:px-0'>10 years ago, I began freelancing as a developer, Since then, I've done remote work for agencies, consulted for startups, and collaborated on digital products for business and consumer use.</p>
-            <div className='hidden md:flex md:max-w-xl xl:max-w-none mx-auto xl:mx-0 mb-8'>
+            <motion.h2 
+            variants={fadeIn('right', 0.2)}
+            initial='hidden'
+            animate='show'
+            exit='hidden'
+            className='xl:text-[35px] text-2xl xl:text-left text-center font-bold mb-4 '>Captivating <span className='text-accent'>stories</span> birth magnification designs.</motion.h2>
+            <motion.p 
+            variants={fadeIn('right', 0.4)}
+            initial='hidden'
+            animate='show'
+            exit='hidden'
+            className='xl:text-left text-center max-w-[500px] mx-auto xl:mx-0 xl:mb-12 px-2 xl:px-0'>10 years ago, I began freelancing as a developer, Since then, I've done remote work for agencies, consulted for startups, and collaborated on digital products for business and consumer use.</motion.p>
+            <motion.div 
+            variants={fadeIn('right', 0.6)}
+            initial='hidden'
+            animate='show'
+            exit='hidden'
+            className='hidden md:flex md:max-w-xl xl:max-w-none mx-auto xl:mx-0 mb-8'>
               <div className='flex flex-1 xl:gap-x-6'>
                 <div className='relative flex-1 after:w-[1px] after:
                 h-full after:bg-white-10 after:absolute after:top-0 after:
@@ -137,10 +154,15 @@ const About = () => {
                   <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px] '>Winning awards</div>
                 </div>
               </div>
-            </div>
+            </motion.div>
           </div>
           {/* info */}
-          <div className='flex flex-col mt-8 w-full xl:pt-20 xl:max-w-[48%] h-[480px]'>
+          <motion.div 
+          variants={fadeIn('left', 0.4)}
+          initial='hidden'
+          animate='show'
+          exit='hidden'
+          className='flex flex-col mt-4 w-full xl:pt-20 xl:max-w-[48%] h-[480px]'>
             <div className='flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4'>
               {aboutData.map((item, itemIndex) => {
                 return (
@@ -167,7 +189,7 @@ const About = () => {
                 )
               })}
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>

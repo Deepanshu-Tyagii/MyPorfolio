@@ -3,11 +3,12 @@ import TopLeftImg from '../components/TopLeftImg'
 import Navbar from '../components/Navbar'
 import SideBar from '../components/SideBar'
 import { Pagination } from 'swiper/modules';
-
-
 import { FaQuoteLeft } from 'react-icons/fa';
-
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { motion } from 'framer-motion';
+import { fadeIn } from '../assets/js/variants';
+
+
 
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -44,13 +45,23 @@ const Testimonials = () => {
         <Navbar />
         <SideBar />
         <div className='container mx-auto h-full mt-12 flex flex-col justify-center'>
-            <h2 className='xl:text-[35px] text-2xl font-bold text-center xl:mb-8 '>What clients <span className='text-accent'> Say.</span></h2>
-            <div>
+            <motion.h2 
+            variants={fadeIn('up', 0.2)}
+            initial='hidden'
+            animate='show'
+            exit='hidden'
+            className='xl:text-[35px] text-2xl font-bold text-center xl:mb-8 '>What clients <span className='text-accent'> Say.</span></motion.h2>
+            <motion.div
+            variants={fadeIn('up', 0.4)}
+            initial='hidden'
+            animate='show'
+            exit='hidden'>
             <Swiper 
+            
             pagination={{
             clickable: true,
         }}
-        modules={{ Pagination}}
+        modules={[Pagination]}
         className='h-[380px] xl:w-[1180px] '
         >
             {testimonialSlider.map((person, index) =>{
@@ -79,7 +90,7 @@ const Testimonials = () => {
             })}
         </Swiper>
 
-            </div>
+            </motion.div>
         </div>
         
     </div>
