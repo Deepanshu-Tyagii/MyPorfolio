@@ -91,7 +91,7 @@ const Projects = () => {
                 pagination={{
                   clickable: true,
                 }}
-                modules={{ Pagination }}
+                modules={[ Pagination ]}
                 className='h-[380px] sm:h-[480px]'
               >
                 {projectData.slides.map((slide, index) => {
