@@ -8,11 +8,11 @@ import { fadeIn } from '../assets/js/variants'
 
 const Contacts = () => {
   return (
-    <div className="main bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 w-screen h-screen overflow-hidden">
+    <div className="main bg-[conic-gradient(at_top,_var(--tw-gradient-stops))] from-gray-900 via-gray-100 to-gray-900  w-screen h-screen overflow-hidden dark:bg-[radial-gradient(ellipse_at_right,_var(--tw-gradient-stops))] dark:from-sky-400 dark:to-indigo-900">
         <TopLeftImg />
         <Navbar />
         <SideBar />
-        <div className="h-full mt-8 container mx-auto py-8 text-center xl:text-left flex items-center justify-center">
+        <div className="h-full mt-8 container mx-auto py-8 text-center xl:text-left flex items-center justify-center dark:text-gray-100 transition duration-500 ease-in-out">
           <motion.div 
           initial={{opacity: 0}}
           animate={{opacity: 1}}
@@ -34,7 +34,7 @@ const Contacts = () => {
                 <input type="email" placeholder='Email' className='w-full h-[52px] rounded-lg pl-6 capitalize outline-none bg-transparent shadow-2xl'/>
               </div>
               <input type="text" placeholder='subject' className='w-full h-[52px] rounded-lg pl-6 capitalize outline-none bg-transparent shadow-2xl my-4'/>
-              <textarea name="text" id="text" placeholder='Message' className='w-full h-[180px] rounded-lg p-6 capitalize resize-none outline-none bg-transparent shadow-2xl'></textarea>
+              <textarea name="text" id="text" placeholder='Message' className='w-full h-[180px] rounded-lg p-6 capitalize resize-none outline-none bg-transparent shadow-2xl '></textarea>
               <button className='rounded-lg border border-white/20 max-w-[170px]
               px-8 transition-all duration-300 flex items-center justify-center overflow-hidden group mt-2 h-[38px]'>
                 <span className='group-hover:translate-x-[10%] group-hover:opacity-0 transition-all duration-500'>Let's talk</span>

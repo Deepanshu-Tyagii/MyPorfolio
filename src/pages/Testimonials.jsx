@@ -40,17 +40,17 @@ export const testimonialSlider = [
 
 const Testimonials = () => {
   return (
-    <div className="main bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 w-screen h-screen overflow-hidden">
+    <div className="main bg-[conic-gradient(at_top,_var(--tw-gradient-stops))] from-gray-900 via-gray-100 to-gray-900 w-screen h-screen overflow-hidden dark:bg-[radial-gradient(ellipse_at_right,_var(--tw-gradient-stops))] dark:from-sky-400 dark:to-indigo-900">
         <TopLeftImg />
         <Navbar />
         <SideBar />
-        <div className='container mx-auto h-full mt-12 flex flex-col justify-center'>
+        <div className='container mx-auto h-full mt-12 flex flex-col justify-center '>
             <motion.h2 
             variants={fadeIn('up', 0.2)}
             initial='hidden'
             animate='show'
             exit='hidden'
-            className='xl:text-[35px] text-2xl font-bold text-center xl:mb-8 '>What clients <span className='text-accent'> Say.</span></motion.h2>
+            className='xl:text-[35px] text-2xl font-bold text-center xl:mb-8 dark:text-gray-100 '>What clients <span className='text-accent'> Say.</span></motion.h2>
             <motion.div
             variants={fadeIn('up', 0.4)}
             initial='hidden'
@@ -73,16 +73,16 @@ const Testimonials = () => {
                                     <div className='mb-2 mx-auto'>
                                         <img src={person.image} width={100} height={100} alt="" />
                                     </div>
-                                    <div className='text-lg'>{person.name}</div>
-                                    <div className='text-[12px] uppercase font-extralight tracking-wide'>{person.position}</div>
+                                    <div className='text-lg dark:text-gray-100'>{person.name}</div>
+                                    <div className='text-[12px] uppercase font-extralight tracking-wide dark:text-gray-100'>{person.position}</div>
                                 </div>
                             </div>
                             {/* message */}
                             <div className='flex-1 flex flex-col justify-center  before:w-[2px] xl:before:bg-white/20 xl:before:absolute xl:before:left-0 xl:before:h-[200px] relative xl:pl-20 max-w-[600px]'>
                                 <div className='mt-4 mb-4'>
-                                    <FaQuoteLeft className='text-4xl xl:text-6xl text-white/20 mx-auto md:mx-0'/>
+                                    <FaQuoteLeft className='text-4xl xl:text-6xl text-slate-400 dark:text-white/30 mx-auto md:mx-0'/>
                                 </div>
-                                <div className='px-12 xl:px-0 xl:text-lg text-center md:text-left'>{person.message}</div>
+                                <div className='px-12 xl:px-0 xl:text-lg text-center md:text-left dark:text-gray-100'>{person.message}</div>
                             </div>
                         </div>
                     </SwiperSlide>

@@ -21,7 +21,7 @@ const Main = () => {
 
 
   return (
-    <div className="main bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 w-screen h-screen overflow-hidden">
+    <div className="main bg-[conic-gradient(at_top,_var(--tw-gradient-stops))] from-gray-900 via-gray-100 to-gray-900 w-screen h-screen overflow-hidden dark:bg-[radial-gradient(ellipse_at_right,_var(--tw-gradient-stops))] dark:from-sky-400 dark:to-indigo-900">
 
       <TopLeftImg />
       <Navbar />
@@ -29,7 +29,7 @@ const Main = () => {
       <div className='h-full'>
         <div className='w-full h-full'>
         <ParticalsContainer />
-          <div className='container text-center xl:pl-32 flex flex-col justify-center xl:pt-28 xl:text-left h-full mx-auto'>
+          <div className='container text-center xl:pl-32 flex flex-col justify-center xl:pt-28 xl:text-left h-full mx-auto dark:text-gray-100 transition duration-500 ease-in-out'>
             <motion.h1 
             variants={fadeIn('down', 0.1)}
             initial='hidden'
@@ -63,7 +63,7 @@ const Main = () => {
               initial='hidden'
               exit='hidden'
               animate='show'
-              className='max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16 text-sm xl:w-4/12 px-8 xl:px-0 pt-4 text-slate-300'>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</motion.p>
+              className='max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16 text-sm xl:w-4/12 px-8 xl:px-0 pt-4 text-slate-500 dark:text-slate-300'>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</motion.p>
             </div>
             <motion.div 
             variants={fadeIn('down', 0.4)}

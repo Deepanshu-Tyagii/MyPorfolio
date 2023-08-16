@@ -60,7 +60,7 @@ export const projectData = {
 
 const Projects = () => {
   return (
-    <div className="main bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 w-screen h-screen overflow-hidden">
+    <div className="main bg-[conic-gradient(at_top,_var(--tw-gradient-stops))] from-gray-900 via-gray-100 to-gray-900 w-screen h-screen overflow-hidden dark:bg-[radial-gradient(ellipse_at_right,_var(--tw-gradient-stops))] dark:from-sky-400 dark:to-indigo-900 dark:text-gray-100 ">
       <TopLeftImg />
       <Navbar />
       <SideBar />
@@ -78,7 +78,7 @@ const Projects = () => {
             initial='hidden'
             animate='show'
             exit='hidden'
-            className='mt-2 mb-4 max-w-[400px] mx-auto lg:mx-0'>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</motion.p>
+            className='mt-2 mb-4 max-w-[400px] mx-auto lg:mx-0 text-slate-500 dark:text-slate-300'>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</motion.p>
             </div>
             <motion.div 
             variants={fadeIn('down', 0.2)}

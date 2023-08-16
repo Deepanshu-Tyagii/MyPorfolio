@@ -1,20 +1,20 @@
 import './App.css';
 import Main from './Main';
-import {Route, Router, Routes} from 'react-router-dom'
+import {Route, Routes} from 'react-router-dom'
 import Projects from './pages/Projects';
 import Contacts from './pages/Contacts';
 import Testimonials from './pages/Testimonials';
-import Transition from './transition/Transition';
+// import Transition from './transition/Transition';
 
-import {AnimatePresence, motion} from 'framer-motion';
+// import {AnimatePresence, motion} from 'framer-motion';
 import About from './pages/Experience';
 
 function App() {
   return (
     <>
-    <AnimatePresence mode='wait'>
+    {/* <AnimatePresence mode='wait'>
       <motion.div key={Route} className='h-full'>
-        <Transition />
+        <Transition /> */}
       <Routes>
         <Route path='/MyPortfolio' element={<Main />} />
         <Route path='/about' element={<About />} />
@@ -22,8 +22,8 @@ function App() {
         <Route path='/projects' element={<Projects />} />
         <Route path='/contacts' element={<Contacts />} />
       </Routes>
-      </motion.div>
-    </AnimatePresence>
+      {/* </motion.div>
+    </AnimatePresence> */}
     
     </>
   );
