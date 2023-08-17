@@ -13,11 +13,11 @@ const SideBar = () => {
       <motion.div
         className='flex w-full xl:flex-col items-center justify-between xl:justify-center gap-y-10 bg-white/10 bg-[conic-gradient(at_top,_var(--tw-gradient-stops))] from-gray-900 via-gray-100 to-gray-900 px-4 md:px-40 xl:px-0 h-[70px] xl:h-max py-8 xl:rounded-xl backdrop-blur-sm dark:text-gray-100 dark:bg-[radial-gradient(ellipse_at_right,_var(--tw-gradient-stops))] dark:from-sky-400 dark:to-indigo-900'>
 
-        <NavLink to='/MyPortfolio'><FaHome className='cursor-pointer text-3xl xl:text-xl xl:hover:scale-150 transition duration-500 ease-in-out' /></NavLink>
-        <NavLink to='/about'><BsFillPersonFill className='cursor-pointer text-3xl xl:text-xl xl:hover:scale-150 transition duration-500 ease-in-out' /></NavLink>
-        <NavLink to='/testimonials'><FaStackExchange className='cursor-pointer text-3xl xl:text-xl xl:hover:scale-150 transition duration-500 ease-in-out' /></NavLink>
-        <NavLink to='/projects'><FaCubes className='cursor-pointer text-3xl xl:text-xl xl:hover:scale-150 transition duration-500 ease-in-out' /></NavLink>
-        <NavLink to='/contacts'><BiSolidMessageDetail className='cursor-pointer text-3xl xl:text-xl xl:hover:scale-150 transition duration-500 ease-in-out' /></NavLink>
+        <NavLink to='/MyPortfolio' ><FaHome className='cursor-pointer text-3xl xl:text-xl xl:hover:scale-150 transition duration-500 ease-in-out' /></NavLink>
+        <NavLink to='/about' ><BsFillPersonFill className='cursor-pointer text-3xl xl:text-xl xl:hover:scale-150 transition duration-500 ease-in-out' /></NavLink>
+        <NavLink to='/testimonials' ><FaStackExchange className='cursor-pointer text-3xl xl:text-xl xl:hover:scale-150 transition duration-500 ease-in-out' /></NavLink>
+        <NavLink to='/projects' ><FaCubes className='cursor-pointer text-3xl xl:text-xl xl:hover:scale-150 transition duration-500 ease-in-out' /></NavLink>
+        <NavLink to='/contacts' ><BiSolidMessageDetail className='cursor-pointer text-3xl xl:text-xl xl:hover:scale-150 transition duration-500 ease-in-out' /></NavLink>
       </motion.div>
     </div>
 

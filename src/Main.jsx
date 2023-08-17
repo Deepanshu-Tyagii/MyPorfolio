@@ -29,20 +29,21 @@ const Main = () => {
       <div className='h-full'>
         <div className='w-full h-full'>
         <ParticalsContainer />
-          <div className='container text-center xl:pl-32 flex flex-col justify-center xl:pt-28 xl:text-left h-full mx-auto dark:text-gray-100 transition duration-500 ease-in-out'>
+          <div className='container text-center xl:pl-32 flex flex-col justify-center xl:pt-28 xl:text-left h-full mx-auto dark:text-gray-100 transition duration-500 ease-in-out '>
             <motion.h1 
             variants={fadeIn('down', 0.1)}
             initial='hidden'
             exit='hidden'
             animate='show'
-            className='text-[55px] font-bold'>Hello,</motion.h1>
+            className='text-[55px] font-bold z-20'>Hello,</motion.h1>
             <div className='text-[22px] lg:text-[40px] font-semibold font-secondary uppercase'>
               <motion.div
               variants={fadeIn('down', 0.2)}
               initial='hidden'
               exit='hidden'
-              animate='show'>
-              <span className=''>I am a </span>
+              animate='show'
+              >
+              <span >I am a </span>
               <TypeAnimation 
               sequence={[
                 'Developer',
@@ -71,8 +72,8 @@ const Main = () => {
             exit='hidden'
             animate='show'
             className='relative xl:mt-0 mt-4 xl:mx-0 mx-auto'>
-              <Link to={google}><img className='w-24 animate-spin-slow' src={curved} alt="curved" /></Link>
-              <Link to={google}><img className='absolute w-8 top-8 left-8' src={arrow} alt="arrow" /></Link>
+              <Link to={google} download=""><img className='w-24 animate-spin-slow' src={curved} alt="curved" /></Link>
+              <Link to={google} download=""><img className='absolute w-8 top-8 left-8' src={arrow} alt="arrow" /></Link>
             </motion.div>
           </div>
           <motion.div 

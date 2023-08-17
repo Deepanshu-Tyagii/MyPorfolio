@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { FaBell, FaInstagram, FaLinkedin, FaMoon, FaSun } from 'react-icons/fa'
+import { FaInstagram, FaLinkedin, FaMoon, FaSun } from 'react-icons/fa'
 import { Link } from 'react-router-dom';
 
 
@@ -53,7 +53,7 @@ const Navbar = () => {
             <Link to={linkedInUrl} target='_blanck'><FaLinkedin className='cursor-pointer xl:hover:text-sky-300 text-xl xl:text-xl xl:hover:scale-150 transition duration-500 ease-in-out' /></Link>
 
             <Link to={instaUrl}><FaInstagram className='cursor-pointer xl:hover:text-orange-300 text-xl xl:text-xl xl:hover:scale-150 transition duration-500 ease-in-out' /></Link>
-            <FaBell className='cursor-pointer hover:text-fuchsia-300 text-xl xl:text-xl xl:hover:scale-150 transition duration-500 ease-in-out' />
+            {/* <FaBell className='cursor-pointer hover:text-fuchsia-300 text-xl xl:text-xl xl:hover:scale-150 transition duration-500 ease-in-out' /> */}
             {
               theme === "light"
                 ?
