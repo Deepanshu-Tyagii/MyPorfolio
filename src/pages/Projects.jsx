@@ -19,19 +19,19 @@ export const projectData = {
       images: [
         {
           title: 'title',
-          path: './images/thumb1.jpg',
+          path: 'images/thumb1.jpg',
         },
         {
           title: 'title',
-          path: './images/thumb2.jpg',
+          path: 'images/thumb2.jpg',
         },
         {
           title: 'title',
-          path: './images/thumb3.jpg',
+          path: 'images/thumb3.jpg',
         },
         {
           title: 'title',
-          path: './images/thumb4.jpg',
+          path: 'images/thumb4.jpg',
         },
       ],
     },
@@ -39,19 +39,19 @@ export const projectData = {
       images: [
         {
           title: 'title',
-          path: './images/thumb4.jpg',
+          path: 'images/thumb4.jpg',
         },
         {
           title: 'title',
-          path: './images/thumb1.jpg',
+          path: 'images/thumb1.jpg',
         },
         {
           title: 'title',
-          path: './images/thumb2.jpg',
+          path: 'images/thumb2.jpg',
         },
         {
           title: 'title',
-          path: './images/thumb3.jpg',
+          path: 'images/thumb3.jpg',
         },
       ],
     },
