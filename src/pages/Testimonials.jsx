@@ -15,25 +15,25 @@ import 'swiper/css/pagination';
 
 export const testimonialSlider = [
     {
-      image: './images/t-avt-1.png',
+      image: require('../assets/images/t-avt-2.png'),
       name: 'Anne Smith',
       position: 'Customer',
       message:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!',
+        'Deepanshu was very helpful and fast to respond to my inquiry to help with website issues, Very helpful when building my website',
     },
     {
-      image: './images/t-avt-2.png',
+      image: require('../assets/images/t-avt-3.png'),
       name: 'Jane Doe',
       position: 'Customer',
       message:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!',
+        'From the start of the project, through to completion, Deepanshu supported us and exceeded our expectations in every way.',
     },
     {
-      image: './images/t-avt-3.png',
+      image: require('../assets/images/t-avt-1.png'),
       name: 'Jhon Doe',
       position: 'Customer',
       message:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum expedita odit beatae, cupiditate saepe quam officia aut placeat quas neque!',
+        'Deepanshu is a great help managing a very out of date website. Everything we ask him to do is done quickly, we would be lost without him.',
     },
   ];
 
@@ -62,7 +62,7 @@ const Testimonials = () => {
             clickable: true,
         }}
         modules={[Pagination]}
-        className='h-[380px] xl:w-[1180px] '
+        className='xl:h-[380px] h-[420px] xl:w-[1180px] '
         >
             {testimonialSlider.map((person, index) =>{
                 return (

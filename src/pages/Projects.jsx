@@ -19,19 +19,19 @@ export const projectData = {
       images: [
         {
           title: 'title',
-          path: 'images/thumb1.jpg',
+          path: require('../assets/images/thumb1.jpg'),
         },
         {
           title: 'title',
-          path: 'images/thumb2.jpg',
+          path: require('../assets/images/thumb2.jpg'),
         },
         {
           title: 'title',
-          path: 'images/thumb3.jpg',
+          path: require('../assets/images/thumb3.jpg'),
         },
         {
           title: 'title',
-          path: 'images/thumb4.jpg',
+          path: require('../assets/images/thumb1.jpg'),
         },
       ],
     },
@@ -39,19 +39,19 @@ export const projectData = {
       images: [
         {
           title: 'title',
-          path: 'images/thumb4.jpg',
+          path: require('../assets/images/thumb2.jpg'),
         },
         {
           title: 'title',
-          path: 'images/thumb1.jpg',
+          path: require('../assets/images/thumb3.jpg'),
         },
         {
           title: 'title',
-          path: 'images/thumb2.jpg',
+          path: require('../assets/images/thumb1.jpg'),
         },
         {
           title: 'title',
-          path: 'images/thumb3.jpg',
+          path: require('../assets/images/thumb3.jpg'),
         },
       ],
     },
@@ -92,7 +92,7 @@ const Projects = () => {
                   clickable: true,
                 }}
                 modules={[ Pagination ]}
-                className='h-[380px] sm:h-[480px]'
+                className='xl:h-[480px] h-[320px] sm:h-[380px]'
               >
                 {projectData.slides.map((slide, index) => {
                   return (

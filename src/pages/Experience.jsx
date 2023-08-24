@@ -3,9 +3,10 @@ import TopLeftImg from '../components/TopLeftImg'
 import Navbar from '../components/Navbar'
 import SideBar from '../components/SideBar'
 import {
-  FaHtml5, FaCss3, FaJs, FaReact, FaFigma, FaNode, FaWordpress
+  FaHtml5, FaCss3, FaJs, FaReact, FaFigma, FaNode
 } from 'react-icons/fa'
 import { SiAdobexd, SiAdobephotoshop } from 'react-icons/si'
+import { TbSql } from 'react-icons/tb'
 
 import CountUp from 'react-countup'
 import { motion } from 'framer-motion'
@@ -24,7 +25,7 @@ export const aboutData = [
           <FaJs />,
           <FaReact />,
           <FaNode />,
-          <FaWordpress />,
+          <TbSql />,
         ],
       },
       {
@@ -54,7 +55,7 @@ export const aboutData = [
         stage: '2022 - present',
       },
       {
-        title: 'Safety Officer - I.S.D.C',
+        title: 'Safety Trainer cum Data Analyst - I.S.D.C',
         stage: '2019 - 2021',
       },
       {
@@ -112,7 +113,7 @@ const About = () => {
               initial='hidden'
               animate='show'
               exit='hidden'
-              className='xl:text-left text-center max-w-[500px] mx-auto xl:mx-0 xl:mb-12 px-2 xl:px-0 text-slate-500 dark:text-slate-300 '>10 years ago, I began freelancing as a developer, Since then, I've done remote work for agencies, consulted for startups, and collaborated on digital products for business and consumer use.</motion.p>
+              className='xl:text-left text-center max-w-[500px] mx-auto xl:mx-0 xl:mb-12 px-2 xl:px-0 text-slate-500 dark:text-slate-300 '>4 years ago, I restart my career as a Data Analyst with full stack developer, Since then, I've done remote work for companies, and work done on digital products for business and consumer use.</motion.p>
             <motion.div
               variants={fadeIn('right', 0.6)}
               initial='hidden'

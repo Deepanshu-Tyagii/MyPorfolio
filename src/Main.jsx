@@ -64,7 +64,7 @@ const Main = () => {
               initial='hidden'
               exit='hidden'
               animate='show'
-              className='max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16 text-sm xl:w-4/12 px-8 xl:px-0 pt-4 text-slate-500 dark:text-slate-300'>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</motion.p>
+              className='max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16 text-sm xl:w-4/12 px-8 xl:px-0 pt-4 text-slate-500 dark:text-slate-300'> I've dedicated my career to building the digital dreams of clients and users alike. As a full stack developer, I combine my love for elegant front-end interfaces with my knack for constructing sturdy back-end foundations, resulting in harmonious applications that captivate and perform.</motion.p>
             </div>
             <motion.div 
             variants={fadeIn('down', 0.4)}
