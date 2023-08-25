@@ -7,18 +7,15 @@ import actor from './assets/images/actor.png'
 import curved from './assets/images/curved.png'
 import shade from './assets/images/shade.png'
 import arrow from './assets/images/arrow.png'
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import ParticalsContainer from './components/particalsContainer';
 import {motion} from 'framer-motion'
 import {fadeIn} from './assets/js/variants'
+import resume from './assets/images/Deepanshu_Resume2.pdf';
 
 
 
 const Main = () => {
-
-  // download link
-  const google = 'https://www.google.com';
-
 
   return (
     <div className="main bg-[conic-gradient(at_top,_var(--tw-gradient-stops))] from-gray-900 via-gray-100 to-gray-900 w-screen h-screen overflow-hidden dark:bg-[radial-gradient(ellipse_at_right,_var(--tw-gradient-stops))] dark:from-sky-400 dark:to-indigo-900">
@@ -66,15 +63,17 @@ const Main = () => {
               animate='show'
               className='max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16 text-sm xl:w-4/12 px-8 xl:px-0 pt-4 text-slate-500 dark:text-slate-300'> I've dedicated my career to building the digital dreams of clients and users alike. As a full stack developer, I combine my love for elegant front-end interfaces with my knack for constructing sturdy back-end foundations, resulting in harmonious applications that captivate and perform.</motion.p>
             </div>
+           
             <motion.div 
             variants={fadeIn('down', 0.4)}
             initial='hidden'
             exit='hidden'
             animate='show'
             className='relative xl:mt-0 mt-4 xl:mx-0 mx-auto'>
-              <Link to={google} download=""><img className='w-24 animate-spin-slow' src={curved} alt="curved" /></Link>
-              <Link to={google} download=""><img className='absolute w-8 top-8 left-8' src={arrow} alt="arrow" /></Link>
+              <a href={resume} download="Deepanshu_tyagi_resume.pdf" ><img className='w-24 animate-spin-slow' src={curved} alt="curved" /></a>
+              <a href={resume} download="Deepanshu_tyagi_resume.pdf"><img className='absolute w-8 top-8 left-8' src={arrow} alt="arrow" /></a>
             </motion.div>
+            
           </div>
           <motion.div 
           variants={fadeIn('up', 0.5)}
