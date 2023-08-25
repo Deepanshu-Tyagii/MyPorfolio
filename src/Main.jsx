@@ -11,7 +11,7 @@ import arrow from './assets/images/arrow.png'
 import ParticalsContainer from './components/particalsContainer';
 import {motion} from 'framer-motion'
 import {fadeIn} from './assets/js/variants'
-import resume from './assets/images/Deepanshu_Resume2.pdf';
+import resume from './assets/images/Deepanshu-Resume.pdf';
 
 
 
