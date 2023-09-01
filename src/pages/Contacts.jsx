@@ -22,7 +22,7 @@ const Contacts = () => {
         ...client,
         [name]: value
     })
-    
+     
 };
 
 
